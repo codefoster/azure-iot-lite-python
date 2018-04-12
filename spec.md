@@ -6,7 +6,7 @@ Stand alone packages via pip install for [`azure-iothub-service-client`](https:/
 
 ## [D2C Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-file-upload)
 
-- Decompose API
+- Need to decompose APIs
 - Depends on
 ```python
 import iothub_client
