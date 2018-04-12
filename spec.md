@@ -2,7 +2,7 @@ Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azu
 
 **OR**
 
-Stand alone packages via pip install for [`azure-iothub-service-client`](https://pypi.python.org/pypi/azure-iothub-service-client) and [`azure-iothub-device-client`](https://pypi.python.org/pypi/azure-iothub-device-client).
+Stand alone packages via pip install for [`azure-iothub-service-client`](https://pypi.python.org/pypi/azure-iothub-service-client) [Github Repo](https://github.com/Azure/azure-iot-sdk-python/tree/master/service) and [`azure-iothub-device-client`](https://pypi.python.org/pypi/azure-iothub-device-client) [GitHub Repo](https://github.com/Azure/azure-iot-sdk-python/tree/master/device).
 
 ## [D2C Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-file-upload)
 
