@@ -12,6 +12,7 @@ Stand alone packages via pip install for [`azure-iothub-service-client`](https:/
 import iothub_client
 from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult, IoTHubError
 ```
+- Uses IoTHubTransportProvider.HTTP protocol to send a file from a client app to the cloud backend in IoT Hub given a connection string.
 
 ## [C2D Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-c2d)
 
@@ -22,15 +23,25 @@ import iothub_client
 from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult
 from iothub_client import IoTHubMessage, IoTHubMessageDispositionResult, IoTHubError
 ```
+- Uses the IoTHubTransportProvider.AMQP or AMQP_WS protocol to send data to a simulatred device in python.
 
 ## [Device Twin](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-twin-getstarted)
 
 - Need to decompose APIs
 - Depends on
-```python
-import iothub_client
-from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult, IoTHubError
-```
+
+  service app
+    ```python
+    import iothub_service_client
+    from iothub_service_client import IoTHubRegistryManager, IoTHubRegistryManagerAuthMethod
+    from iothub_service_client import IoTHubDeviceTwin, IoTHubError
+    ```
+  device app
+    ```python
+    import iothub_client
+    from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult, IoTHubError
+    ```
+-
 
 ## [Method Invocation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-direct-methods)
 
@@ -40,5 +51,13 @@ from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvid
 import iothub_service_client
 from iothub_service_client import IoTHubDeviceMethod, IoTHubError
 ```
+- React to methods invoked by the cloud
 
 ## [Choosing a Protocol](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-protocols)
+
+Includes
+- MQTT
+- MQTT over WebSockets
+- AMQP
+- AMQP over WebSockets
+- HTTPS
