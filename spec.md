@@ -1,5 +1,9 @@
 Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azure) `pip install azure`. On Windoes installed in direcotry like `C:\Users\{USER_NAME_HERE}\AppData\Roaming\Python\Python27\site-packages\azure\mgmt\iothub`.
 
+**OR**
+
+Stand alone packages via pip install for [`azure-iothub-service-client`](https://pypi.python.org/pypi/azure-iothub-service-client) and [`azure-iothub-device-client`](https://pypi.python.org/pypi/azure-iothub-device-client).
+
 ## [D2C Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-file-upload)
 
 - Decompose API
