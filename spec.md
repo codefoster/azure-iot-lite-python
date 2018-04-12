@@ -1,10 +1,18 @@
+Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azure) `pip install azure`. On Windoes installed in direcotry like C:\Users\{USER_NAME_HERE}\AppData\Roaming\Python\Python27\site-packages\azure\mgmt\iothub.
+
 ## [D2C Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-file-upload)
+
+- Decompose API
+- Depends on
+```python
+import iothub_client
+from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult, IoTHubError
+```
 
 ## [C2D Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-c2d)
 
 - Need to decompose APIs
-- Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azure) `pip install azure`.
-
+- Depends on
 ```python
 import iothub_client
 from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult
