@@ -1,4 +1,4 @@
-Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azure) `pip install azure`. On Windoes installed in direcotry like C:\Users\{USER_NAME_HERE}\AppData\Roaming\Python\Python27\site-packages\azure\mgmt\iothub.
+Get from pip using the [Microsoft Azure bundle](https://pypi.python.org/pypi/azure) `pip install azure`. On Windoes installed in direcotry like `C:\Users\{USER_NAME_HERE}\AppData\Roaming\Python\Python27\site-packages\azure\mgmt\iothub`.
 
 ## [D2C Messages](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-file-upload)
 
@@ -19,12 +19,22 @@ from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvid
 from iothub_client import IoTHubMessage, IoTHubMessageDispositionResult, IoTHubError
 ```
 
-`iothub_client`
-Properties
-Methods
+## [Device Twin](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-twin-getstarted)
 
-## Device Twin
+- Need to decompose APIs
+- Depends on
+```python
+import iothub_client
+from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvider, IoTHubClientResult, IoTHubError
+```
 
-## Method Invocation
+## [Method Invocation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-python-python-direct-methods)
 
-## Choosing a Protocol
+- Need to decompose APIs
+- Depends on
+```python
+import iothub_service_client
+from iothub_service_client import IoTHubDeviceMethod, IoTHubError
+```
+
+## [Choosing a Protocol](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-protocols)
